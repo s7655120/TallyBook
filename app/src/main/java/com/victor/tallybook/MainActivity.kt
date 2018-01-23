@@ -21,6 +21,7 @@ class MainActivity<V, T : BasePresenter<V>> : BaseActivity<V, T>() {
     }
 
     override fun createPresenter(): T {
+
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

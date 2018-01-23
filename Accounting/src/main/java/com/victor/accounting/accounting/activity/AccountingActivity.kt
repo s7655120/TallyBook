@@ -1,7 +1,8 @@
-package com.victor.accounting.accounting
+package com.victor.accounting.accounting.activity
 
 import android.os.Bundle
 import android.view.View
+import com.victor.accounting.R
 import com.victor.common.kotlin.base.BaseActivity
 
 /**
@@ -11,7 +12,7 @@ import com.victor.common.kotlin.base.BaseActivity
 class AccountingActivity : BaseActivity<AccountingContract.AccountingView, AccountingPresenter>() {
 
     override fun initActivityView(savedInstanceState: Bundle?) {
-
+        setContentView(R.layout.activity_accounting)
     }
 
     override fun onClick(v: View?) {

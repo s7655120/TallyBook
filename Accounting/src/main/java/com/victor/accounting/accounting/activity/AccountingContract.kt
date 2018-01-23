@@ -1,4 +1,4 @@
-package com.victor.accounting.accounting
+package com.victor.accounting.accounting.activity
 
 /**
  * Created by Victor on 2018/1/23.

@@ -1,4 +1,4 @@
-package com.victor.accounting.accounting
+package com.victor.accounting.accounting.activity
 
 import com.victor.common.kotlin.base.BasePresenter
 

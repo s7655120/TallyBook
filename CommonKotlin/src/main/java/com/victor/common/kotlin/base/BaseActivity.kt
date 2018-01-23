@@ -2,6 +2,7 @@ package com.victor.common.kotlin.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
 
 /**
@@ -10,7 +11,8 @@ import android.view.View
  */
 abstract class BaseActivity<V, T : BasePresenter<V>> : AppCompatActivity(), View.OnClickListener {
 
-//    val TAG = BaseActivity::class.simpleName
+    // 需要添加kotlin的反射库
+    val TAG = javaClass.simpleName
 
     lateinit var mPresenter : T
 
