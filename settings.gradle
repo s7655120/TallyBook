@@ -1,1 +1,0 @@
-include ':app', ':CommonKotlin', ':StartOver', ':Accounting'
