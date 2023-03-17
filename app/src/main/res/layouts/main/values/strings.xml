@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_bottom_detailed_tab">明细</string>
+    <string name="main_bottom_mine_tab">我的</string>
+    <string name="main_bottom_tally_tab">记账</string>
+</resources>
