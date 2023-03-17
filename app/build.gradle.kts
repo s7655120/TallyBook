@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = App.namespace
-    compileSdk = 33
+    compileSdk = Versions.compileSdkVersion
 
     defaultConfig {
         applicationId = App.applicationId
@@ -35,6 +35,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.2.0"
@@ -45,15 +46,31 @@ android {
             add("META-INF/LGPL2.1")
         }
     }
+
+    sourceSets{
+        getByName("main").res.setSrcDirs(
+            listOf(
+                "src/main/res",
+                "src/main/res/layouts/main",
+                "src/main/res/layouts/tally",
+                "src/main/res/layouts/chart",
+                "src/main/res/layouts/center",
+            )
+        )
+    }
 }
 
 dependencies {
     implementation(Libs.core_ktx)
     implementation(Libs.lifecycle_runtime_ktx)
-    implementation(Libs.activity_compose)
-    implementation(Libs.compose_ui)
-    implementation(Libs.compose_ui_tooling_preview)
+//    implementation(Libs.activity_compose)
+//    implementation(Libs.Compose_ui)
+//    implementation(Libs.Compose_ui_tooling_preview)
     implementation(Libs.material)
+
+    api(project(":common"))
+
+
 //    testImplementation("junit:junit:4.13.2")
 //    androidTestImplementation("androidx.test.ext:junit:1.1.5")
 //    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
